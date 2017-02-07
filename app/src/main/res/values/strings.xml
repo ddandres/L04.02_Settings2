@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (c) 2017. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+  -->
+
+<resources>
+    <string name="app_name">L04.02_Settings</string>
+    <string name="user_name">Hello %1s!</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string name="username_category">User name configuration</string>
+    <string name="user_name_title">User Name</string>
+    <string name="user_name_summary">How do you want to be known in this app</string>
+    <string name="user_name_hint">Write your user name</string>
+    <string name="user_name_default">Anonymous user</string>
+    <string name="text_color_title">Text Color</string>
+    <string name="text_color_summary">The color to display text on screen</string>
+    <string name="icon_category">Icon configuration</string>
+    <string name="icon_visible_title">Show Icon</string>
+
+    <!--Colors-->
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="magenta">Magenta</string>
+    <string name="cyan">Cyan</string>
+    <string name="white">White</string>
+    <string name="black">Black</string>
+
+</resources>

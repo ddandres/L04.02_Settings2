@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+  -->
+
+<resources>
+
+    <!--List of colors to display the welcome message-->
+    <string-array name="colors_name">
+        <item>@string/red</item>
+        <item>@string/green</item>
+        <item>@string/blue</item>
+        <item>@string/yellow</item>
+        <item>@string/magenta</item>
+        <item>@string/cyan</item>
+        <item>@string/white</item>
+        <item>@string/black</item>
+    </string-array>
+
+    <!--Value of the previously selected colors-->
+    <string-array name="colors_value">
+        <item>#FF0000</item>
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+        <item>#FFFF00</item>
+        <item>#FF00FF</item>
+        <item>#00FFFF</item>
+        <item>#FFFFFF</item>
+        <item>#000000</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Welcome message related settings-->
+    <PreferenceCategory android:title="@string/username_category">
+
+        <!--User name-->
+        <EditTextPreference
+            android:defaultValue="@string/user_name_default"
+            android:hint="@string/user_name_hint"
+            android:key="username"
+            android:summary="@string/user_name_summary"
+            android:title="@string/user_name_title" />
+
+        <!--Text color-->
+        <ListPreference
+            android:entries="@array/colors_name"
+            android:entryValues="@array/colors_value"
+            android:key="textcolor"
+            android:summary="@string/text_color_summary"
+            android:title="@string/text_color_title" />
+    </PreferenceCategory>
+
+    <!--Icon related settings-->
+    <PreferenceCategory android:title="@string/icon_category">
+
+        <!--Show/Hide icon-->
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="iconvisible"
+            android:title="@string/icon_visible_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
