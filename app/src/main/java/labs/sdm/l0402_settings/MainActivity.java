@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         // Keep a reference to:
         //  the TextView displaying the text on the screen
         //  the ImageView display the app icon
-        tvUserName = (TextView) findViewById(R.id.tvUserName);
-        ivIcon = (ImageView) findViewById(R.id.ivIcon);
+        tvUserName = findViewById(R.id.tvUserName);
+        ivIcon = findViewById(R.id.ivIcon);
     }
 
     @Override
