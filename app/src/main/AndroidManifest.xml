@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="labs.sdm.l0402_settings">
+    package="labs.dadm.l0402_settings">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <!--Main activity-->
-        <activity android:name=".MainActivity">
+        <activity android:name="labs.dadm.l0402_settings.MainActivity">
 
             <!-- This is the entry point to the application -->
             <intent-filter>
@@ -23,14 +23,14 @@
         <!--Activity to configure the application-->
         <!--Enable up navigation-->
         <activity
-            android:name=".SettingsActivity"
+            android:name="labs.dadm.l0402_settings.SettingsActivity"
             android:label="@string/app_name"
-            android:parentActivityName="labs.sdm.l0402_settings.MainActivity">
+            android:parentActivityName="labs.dadm.l0402_settings.MainActivity">
 
             <!-- Enable up navigation for backwards compatibility -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="labs.sdm.l0402_settings.MainActivity" />
+                android:value="labs.dadm.l0402_settings.MainActivity" />
         </activity>
     </application>
 

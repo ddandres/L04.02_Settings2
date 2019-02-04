@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2017. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+ * Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package labs.sdm.l0402_settings;
+package labs.dadm.l0402_settings;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         tvUserName.setTextColor(Color.parseColor(prefs.getString("textcolor", "#000000")));
 
         // Display/Hide the icon as selected by the user (get it from SharedPreferences)
-        ivIcon.setVisibility(prefs.getBoolean("iconvisible", true)?View.VISIBLE:View.INVISIBLE);
+        ivIcon.setVisibility(prefs.getBoolean("iconvisible", true) ? View.VISIBLE : View.INVISIBLE);
     }
 
     /*
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         // Determine the action to take place according to the Id of the action selected
-        switch(item.getItemId()) {
+        switch (item.getItemId()) {
 
             // Display settings activity
             case R.id.miSettings:

@@ -13,7 +13,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="labs.sdm.l0402_settings.MainActivity">
+    tools:context="labs.sdm.l0402_settings.labs.dadm.l0402_settings.MainActivity">
 
     <!--Displays the app icon-->
     <ImageView

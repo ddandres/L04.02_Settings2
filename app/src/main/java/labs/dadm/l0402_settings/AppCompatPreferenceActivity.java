@@ -1,4 +1,8 @@
-package labs.sdm.l0402_settings;
+/*
+ * Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+ */
+
+package labs.dadm.l0402_settings;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
