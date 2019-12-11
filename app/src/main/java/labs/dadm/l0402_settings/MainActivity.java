@@ -9,12 +9,13 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,12 +43,18 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         // Display a greetings message that includes the user's name (get it from SharedPreferences)
-        tvUserName.setText(String.format(getResources().getString(R.string.user_name), prefs.getString("username", "Anonymous user")));
+        tvUserName.setText(String.format(getResources().getString(R.string.user_name),
+                prefs.getString("username", getString(R.string.user_name_default))));
         // Set the color of the text to that selected by the user (get it from SharedPreferences)
-        tvUserName.setTextColor(Color.parseColor(prefs.getString("textcolor", "#000000")));
+        tvUserName.setTextColor(Color.parseColor(
+                prefs.getString("textcolor", getString(R.string.default_text_color))));
 
         // Display/Hide the icon as selected by the user (get it from SharedPreferences)
-        ivIcon.setVisibility(prefs.getBoolean("iconvisible", true) ? View.VISIBLE : View.INVISIBLE);
+        if (prefs.getBoolean("iconvisible", true)) {
+            ivIcon.setVisibility(View.VISIBLE);
+        } else {
+            ivIcon.setVisibility(View.INVISIBLE);
+        }
     }
 
     /*
@@ -68,13 +75,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         // Determine the action to take place according to the Id of the action selected
-        switch (item.getItemId()) {
-
+        if (item.getItemId() == R.id.miSettings) {
             // Display settings activity
-            case R.id.miSettings:
-                Intent intent = new Intent(this, SettingsActivity.class);
-                startActivity(intent);
-                return true;
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

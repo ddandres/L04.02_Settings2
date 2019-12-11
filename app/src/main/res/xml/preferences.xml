@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2017. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!--Welcome message related settings-->
     <PreferenceCategory android:title="@string/username_category">
@@ -18,6 +18,7 @@
 
         <!--Text color-->
         <ListPreference
+            android:defaultValue="@string/black"
             android:entries="@array/colors_name"
             android:entryValues="@array/colors_value"
             android:key="textcolor"
@@ -32,7 +33,8 @@
         <SwitchPreference
             android:defaultValue="true"
             android:key="iconvisible"
-            android:title="@string/icon_visible_title" />
+            android:title="@string/icon_visible_title"
+            app:defaultValue="true" />
     </PreferenceCategory>
 
 </PreferenceScreen>
