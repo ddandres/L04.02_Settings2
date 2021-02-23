@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+ * Copyright (c) 2021. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices. 
  */
 
-package labs.dadm.l0402_settings;
+package labs.dadm.l0402_settings.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import labs.dadm.l0402_settings.R;
 
 public class MainActivity extends AppCompatActivity {
 

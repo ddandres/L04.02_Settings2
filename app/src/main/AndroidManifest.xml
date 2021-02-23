@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <!--Main activity-->
-        <activity android:name="labs.dadm.l0402_settings.MainActivity">
+        <activity android:name="labs.dadm.l0402_settings.activities.MainActivity">
 
             <!-- This is the entry point to the application -->
             <intent-filter>
@@ -23,14 +23,14 @@
         <!--Activity to configure the application-->
         <!--Enable up navigation-->
         <activity
-            android:name="labs.dadm.l0402_settings.SettingsActivity"
+            android:name="labs.dadm.l0402_settings.activities.SettingsActivity"
             android:label="@string/app_name"
-            android:parentActivityName="labs.dadm.l0402_settings.MainActivity">
+            android:parentActivityName="labs.dadm.l0402_settings.activities.MainActivity">
 
             <!-- Enable up navigation for backwards compatibility -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="labs.dadm.l0402_settings.MainActivity" />
+                android:value="labs.dadm.l0402_settings.activities.MainActivity" />
         </activity>
     </application>
 

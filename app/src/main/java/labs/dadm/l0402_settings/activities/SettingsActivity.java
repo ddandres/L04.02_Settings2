@@ -1,14 +1,17 @@
 /*
- * Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+ * Copyright (c) 2021. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices. 
  */
 
-package labs.dadm.l0402_settings;
+package labs.dadm.l0402_settings.activities;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceFragmentCompat;
+
+import labs.dadm.l0402_settings.R;
+import labs.dadm.l0402_settings.fragments.SettingsFragment;
 
 /*
   Displays the application Settings using the Preference mechanism.
@@ -25,7 +28,8 @@ public class SettingsActivity extends AppCompatActivity {
         // Launch a new transaction to replace the View of frSettings frame with the SettingsFragment
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.frSettings, new SettingsFragment())
+                .setReorderingAllowed(true)
+                .replace(R.id.fcvSettings, SettingsFragment.class, null)
                 .commit();
 
         // Get a reference to the Actionbar
@@ -33,18 +37,6 @@ public class SettingsActivity extends AppCompatActivity {
         // If the application has an ActionBar the enable the up navigation
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-        }
-    }
-
-    /*
-      Displays the application Settings to the user through a PreferenceFragment.
-     */
-    public static class SettingsFragment extends PreferenceFragmentCompat {
-
-        @Override
-        public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-            // Creates the View to be shown from a Preference resource
-            setPreferencesFromResource(R.xml.preferences, rootKey);
         }
     }
 

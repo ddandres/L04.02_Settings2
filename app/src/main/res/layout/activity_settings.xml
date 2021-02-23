@@ -3,9 +3,9 @@
   -->
 
 <!-- Frame to display the settings for the application based on Preferences -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frSettings"
+<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fcvSettings"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</FrameLayout>
+</androidx.fragment.app.FragmentContainerView>
