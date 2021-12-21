@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices. 
+ * Copyright (c) 2021. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
 package labs.dadm.l0402_settings.activities;
@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import labs.dadm.l0402_settings.R;
@@ -59,20 +60,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /*
-        This method is executed when the activity is created to populate the ActionBar with actions
-     */
+    // This method is executed when the activity is created to populate the ActionBar with actions
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
         // Generate the Menu object from the XML resource file
         getMenuInflater().inflate(R.menu.main_menu, menu);
-
         return true;
     }
 
-    /*
-        This method is executed when any action from the ActionBar is selected
-    */
+    // This method is executed when any action from the ActionBar is selected
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 

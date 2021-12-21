@@ -10,9 +10,7 @@ import androidx.preference.PreferenceFragmentCompat;
 
 import labs.dadm.l0402_settings.R;
 
-/*
-  Displays the application Settings to the user through a PreferenceFragment.
- */
+// Displays the application Settings to the user through a PreferenceFragment.
 public class SettingsFragment extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {

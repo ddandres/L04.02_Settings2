@@ -10,7 +10,9 @@
         android:theme="@style/AppTheme">
 
         <!--Main activity-->
-        <activity android:name="labs.dadm.l0402_settings.activities.MainActivity">
+        <activity
+            android:name="labs.dadm.l0402_settings.activities.MainActivity"
+            android:exported="true">
 
             <!-- This is the entry point to the application -->
             <intent-filter>
